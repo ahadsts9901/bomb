@@ -1,0 +1,145 @@
+* {
+    font-family: "Space Mono", "monospace";
+    font-weight: bold;
+}
+
+body {
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    padding: 0em;
+    margin: 0em;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    column-gap: 0.5em;
+}
+
+column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em;
+    row-gap: 0em;
+}
+
+.bomb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    border: 0px;
+    padding: 1.5em 1em;
+    border-radius: 25px;
+    row-gap: 1em;
+    background-color: #4b5320;
+}
+
+.button {
+    font-size: 1em;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0.3em 1em;
+    width: 100%;
+    height: 3em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.input::placeholder {
+    justify-self: center;
+    text-align: center;
+    color: #000;
+}
+
+.main {
+    width: 5em;
+}
+
+.number {
+    width: 2.8em;
+}
+
+span {
+    width: 0.7em;
+    height: 0.7em;
+    border: 0px;
+    background-color: #bababa;
+}
+
+#yellow {
+    background-color: #ee0;
+    width: 0.9em;
+    height: 0.9em;
+}
+
+#play-button {
+    color: #fff;
+    position: fixed;
+    top: 0.5em;
+    right: 0.5em;
+    background-color: #4b5320;
+    padding: 0.2em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+p.center {
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 780px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    body {
+        font-size: 0.7em;
+    }
+}

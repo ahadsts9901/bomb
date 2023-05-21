@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
+    <title>Bomb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></link>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    </link>
+</head>
+
+<body>
+    <audio src="./assets/war background.mp3" id="war-background" preload="auto"></audio>
+    <audio src="./assets/timer.mp3" id="timer" preload="auto"></audio>
+    <audio src="./assets/bomb.mp3" id="bomb" preload="auto"></audio>
+    <a href="javascript:void(0)" onClick="sound()">
+        <h1 id="play-button" class="bi bi-volume-mute-fill"></h1>
+    </a>
+    <h2 class="center">PASSWORD IS '12345678'</h2>
+    <div class="bomb">
+        <textbox>
+            <input readonly type="text" class="input" id="number" placeholder="ENTER CODE...">
+        </textbox>
+        <column>
+            <row>
+                <span id="green"></span>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('1')">1</button>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('2')">2</button>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('3')">3</button>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('4')">4</button>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('5')">5</button>
+            </row>
+            <row>
+                <span id="yellow"></span>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('6')">6</button>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('7')">7</button>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('8')">8</button>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('9')">9</button>
+                <button type="button" class="btn btn-dark number button" onclick="getnumber('0')">0</button>
+            </row>
+            <row>
+                <span id="red"></span>
+                <button type="button" class="btn btn-danger main button" onclick="Back()" id="back">BACK</button>
+                <button type="button" class="btn btn-success main button" onclick="Clear()">CLEAR</button>
+                <button type="submit" class="btn btn-dark main button" onclick="Start()">START</button>
+            </row>
+        </column>
+    </div>
+    <p class="center">Thanks For Visiting Regards! Muhammad Ahad&copy;</p>
+    <!-- javascript -->
+    <script src="./main.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
