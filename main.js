@@ -67,4 +67,5 @@ function soundStop() {
     document.getElementById("container").innerHTML =
     '<button type="button" id="play-button" class="bi bi-volume-up-fill" onclick="sound()"></button>';
     document.getElementById("war-background").play();
+    document.getElementById("war-background").muted = false;
 }
