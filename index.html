@@ -25,12 +25,12 @@
 </head>
 
 <body>
-    <audio src="./assets/war background.mp3" id="war-background" preload="auto"></audio>
+    <audio src="./assets/war-background.mp3" id="war-background" preload="auto"></audio>
     <audio src="./assets/timer.mp3" id="timer" preload="auto"></audio>
     <audio src="./assets/bomb.mp3" id="bomb" preload="auto"></audio>
-    <a href="javascript:void(0)" onClick="sound()">
-        <h1 id="play-button" class="bi bi-volume-mute-fill"></h1>
-    </a>
+    <div id="container">
+        <button type="button" id="play-button" class="bi bi-volume-mute-fill" onclick="soundStop()"></button>
+    </div>
     <h2 class="center">PASSWORD IS '12345678'</h2>
     <div class="bomb">
         <textbox>

@@ -58,13 +58,13 @@ function Start() {
 }
 
 function sound() {
-    document.getElementById("play-button").innerHTML =
-        '<a href="javascript:void(0)" onClick="soundStop()"><h1 id="play-button" class="bi bi-volume-up-fill"></h1></a>';
-    document.getElementById("war-background").play();
+    document.getElementById("container").innerHTML =
+        '<button type="button" id="play-button" class="bi bi-volume-mute-fill" onclick="soundStop()"></button>';
+    document.getElementById("war-background").muted = true;
 }
 
 function soundStop() {
-    document.getElementById("play-button").innerHTML =
-        '<a href="javascript:void(0)" onClick="sound()"><h1 id="play-button" class="bi bi-volume-mute-fill"></h1></a>';
-    document.getElementById("war-background").disabled = true;
+    document.getElementById("container").innerHTML =
+    '<button type="button" id="play-button" class="bi bi-volume-up-fill" onclick="sound()"></button>';
+    document.getElementById("war-background").play();
 }
